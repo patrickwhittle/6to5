@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if ! ./node_modules/.bin/eslint src; then
+    echo 'Aborting commit due to JS errors'
+    exit 1
+fi
+

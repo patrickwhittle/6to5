@@ -1,0 +1,21 @@
+{
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel src --out-dir lib",
+    "lint": "eslint src || exit 0",
+    "postinstall": "npm run compile"
+  },
+  "name": "6to5",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "eslint": "^3.8.1",
+    "eslint-plugin-react": "^6.4.1"
+  }
+}
